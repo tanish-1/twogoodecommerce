@@ -325,8 +325,16 @@ const products = [
         types: 'shop'
     }
 ];
-mongoose.connect('mongodb://127.0.0.1:27017/two_good_ecommerce')
+
+
+
+mongoose.connect('mongodb+srv://imtanishlamba:iivEo5TMzBwVluaW@cluster0.yqdtaef.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(async()=>{
    await Product.create(products);
    console.log("Products inserted successfully!");
 })
+
+
+
+// imtanishlamba
+// iivEo5TMzBwVluaW

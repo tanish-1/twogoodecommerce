@@ -62,7 +62,7 @@ app.use('/', authRoutes);
 // Add other routes as needed
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/two_good_ecommerce').then(() => {
+mongoose.connect('mongodb+srv://imtanishlamba:iivEo5TMzBwVluaW@cluster0.yqdtaef.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then(() => {
     app.listen(PORT, () => {
         console.log(`Server is running on http://localhost:${PORT}`);
     });
