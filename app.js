@@ -8,6 +8,7 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport');
 const User = require('./model/User')
+const cors = require('cors');
 
 // Import routes
 const productRoutes = require('./routes/product');
@@ -28,6 +29,7 @@ app.use(flash());
 app.get("/", (req, res) => {
     res.render("index")
 });
+app.use(cors());
 // Session middleware
 app.use(
     session({
